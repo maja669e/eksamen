@@ -21,4 +21,9 @@ public class CovidController {
         return "infectionPressure";
     }
 
+    @GetMapping("/parishes")
+    public String parishes() {
+        return "parishes";
+    }
+
 }

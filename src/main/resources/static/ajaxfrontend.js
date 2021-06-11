@@ -19,6 +19,7 @@ function getParish() {
                          
                          <input onclick="return false;" type="checkbox" id="checkBoxId" ${compareDate(data.shutDownTime) ? "checked" : ""}>
                      </div>
+                     <hr>
                 `
                 $("#parishList").append(html)
             })
@@ -54,7 +55,8 @@ $("#create_parish").submit(function (e) {
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function (msg) {
-            alert('In Ajax');
+            alert('Parish created!');
+            location.href = "/parishes"
         }
     });
 

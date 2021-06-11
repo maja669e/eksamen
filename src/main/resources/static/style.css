@@ -1,23 +1,137 @@
 body {
-    background-color: #efecf8;
+    background-color: #f2f8fc;
     margin: 0;
 }
-h1{
-    font-size: 22px;
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2vw;
+    color: #454545;
 }
 
 h2 {
-    font-size: 15px;
+    font-size: 22px;
+    color: #454545;
 }
-.btn{
+
+.btn {
     margin: 0.2vw;
 }
 
-#frontpage{
+#parishespage, #infpage, #create_parish {
     margin: 2vw;
 }
 
-.container {
+#infpage {
+    margin: 4vw;
+}
+.infections {
+    margin: 2vw;
+    padding: 2vw;
+    border-radius: 5%;
+    background-color: white;
+    box-shadow: 1px 5px 6px 1px rgba(0, 0, 0, 0.20);
+}
+
+#h2container {
+    text-align: center;
+    margin: 2vw;
+}
+
+#parishes {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#parishes h2 {
+    text-align: center;
+}
+
+.create, .parishList{
+    background-color: white;
+    border-radius: 5%;
+    padding: 2vw;
+    box-shadow: 1px 5px 6px 1px rgba(0, 0, 0, 0.20);
+}
+
+#statistic, #submitCreate {
+    text-align: center;
+    margin: 3vw;
+}
+
+#update_parish {
+    text-align: center;
+    background-color: white;
+    border-radius: 5%;
+    padding: 2vw;
+    margin: 5vw;
+    box-shadow: 1px 5px 6px 1px rgba(0, 0, 0, 0.20);
+}
+
+/*-------Menu-------*/
+
+#border_header hr {
+    width: 92%;
+    height: 3px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, #aae9f8, #5196cd);
+    border-style: none;
+}
+
+.topnav {
+    overflow: hidden;
+    width: 100%;
+}
+
+.border_header {
+    border: 1px solid #5f5f5f;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #454545;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    z-index: 3;
+    margin-left: 4vw;
+    font-weight: bold;
+}
+
+.topnav a:hover {
+    text-decoration: underline;
+    opacity: 0.6;
+}
+
+
+/*---------Footer----------*/
+
+footer {
+    margin-top: 10vw;
+    width: 100%;
+    background-color: #5f5f5f;
+    color: white;
+    bottom: 0;
+}
+
+footer a {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+.copyright p {
+    flex-basis: 200px;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 12px;
+    margin: 0;
+    padding: 2vw;
 }

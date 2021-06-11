@@ -10,33 +10,47 @@
 
 </head>
 <body>
-<form id="create_parish">
+
+<h1>Update parish</h1>
+
+<form id="update_parish">
+
     <div>
         <label class="title">Parish Code</label>
-        <input type="text" id="parish_code">
+        <input type="number" id="parish_code">
     </div>
+<hr>
     <div>
         <label class="title">Name</label>
         <input type="text" id="parish_name">
     </div>
+    <hr>
     <div>
         <label class="title">Infection Pressure</label>
         <input type="text" id="infection_pressure">
     </div>
+    <hr>
     <div>
         <label class="title">Shutdown Time</label>
         <input type="date" id="shutdown_time">
     </div>
-
+<hr>
     <div>
         <label class="title">Commune</label>
         <input type="text" id="commune">
     </div>
+    <hr>
     <div>
-        <input class="btn btn-success" type="submit" id="submitButton" name="submitButton" value="Submit">
+        <input style="margin: 2vw" class="btn btn-success" type="submit" id="submitButton" name="submitButton" value="Submit">
+        <input style="margin: 2vw" class="btn btn-danger" type="submit" id="btnCancel" value="Cancel" onclick="location.href='/parishes'">
     </div>
 </form>
 
+<footer>
+    <div class="copyright">
+        <p> © Copyright 2021 - All Rights Reserved ❘ Designed by Maja Bijedić</p>
+    </div>
+</footer>
 
 </body>
 </html>

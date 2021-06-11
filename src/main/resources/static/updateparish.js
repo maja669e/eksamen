@@ -15,7 +15,7 @@ $(document).ready(function() {//kald først jQuery-funktioner,når siden er klar
             $("#commune").val(parishData.commune);
         }
     });
-    $("#create_parish").submit(function(e) {
+    $("#update_parish").submit(function(e) {
         e.preventDefault(); // avoid to execute the actual submit of the form.
         let newParish= {parishCode: $('#parish_code').val(),
             name: $('#parish_name').val(),
@@ -32,7 +32,7 @@ $(document).ready(function() {//kald først jQuery-funktioner,når siden er klar
             contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function() {
-                location.href = "/"
+                location.href = "/parishes"
             }
         });
     });

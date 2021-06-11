@@ -10,60 +10,32 @@
 </head>
 <body>
 
-<div id="frontpage">
+<header id="myTopnav">
+    <div>
+        <div class="topnav">
+            <a href="/">Frontpage</a>
+            <a href="/parishes">Parishes</a>
+            <a href="/infectionPressure">Infection Pressure</a>
+        </div>
+        <div id="border_header">
+            <hr>
+        </div>
+    </div>
 
-    <div class="container">
+</header>
+
+    <div id="h2container">
         <h1>H2 console</h1>
+        <p>Click on button to go to the h2 console</p>
         <a class="btn btn-info" href="h2-console">H2-console</a>
     </div>
 
-    <h2>Parish list</h2>
-    <div id="parishList"></div>
 
-    <h2>Add new parish</h2>
-    <form id="create_parish">
-        <div>
-            <label class="title">Parish Code</label>
-            <input type="text" id="parish_code">
-        </div>
-        <div>
-            <label class="title">Name</label>
-            <input type="text" id="parish_name">
-        </div>
-        <div>
-            <label class="title">Infection Pressure</label>
-            <input type="text" id="infection_pressure">
-        </div>
-        <div>
-            <label class="title">Shutdown Time</label>
-            <input type="date" id="shutdown_time">
-        </div>
-        <div>
-            <label class="title">Commune</label>
-            <input type="text" id="commune_id">
-        </div>
+<footer style="margin-top: 24vw">
+    <div class="copyright">
+        <p> © Copyright 2021 - All Rights Reserved ❘ Designed by Maja Bijedić</p>
+    </div>
+</footer>
 
-
-        <div>
-            <input class="btn btn-info" type="submit" id="submitButton" name="submitButton" value="Submit">
-        </div>
-    </form>
-
-    <button class="btn btn-secondary" onclick="location.href='/infectionPressure'">
-        See infection statistics
-    </button>
-
-</div>
-
-
-<script type="text/javascript" th:src="@{/ajaxfrontend.js}"></script>
-<script type="text/javascript">
-
-    $(document).ready(function () {//kald først jQuery-funktioner,når siden er klar
-        getParish();
-    });
-
-
-</script>
 </body>
 </html>

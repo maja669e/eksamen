@@ -1,4 +1,4 @@
-$(document).ready(function() {//kald først jQuery-funktioner,når siden er klar
+$(document).ready(function () {//kald først jQuery-funktioner,når siden er klar
     $.ajax({
         url: "/commune",
         type: "GET",
@@ -8,17 +8,16 @@ $(document).ready(function() {//kald først jQuery-funktioner,når siden er klar
                 let totalInfection = 0;
                 let averageInfection = 0;
                 let html = `
-                        
+                       
                      <h3>Commune</h3>
                     <div id="communeId-${commune.id}">
                         ${commune.name} ${commune.communeCode} 
                      </div> 
                      </br>
                      <h5>Perishes</h5>
-                     
                 `
-                $.each(commune.parishes, function (index, parish){
-                    html+=  `
+                $.each(commune.parishes, function (index, parish) {
+                    html += `
                   <div>
                    ${parish.name} ${parish.infectionPressure}
                    
@@ -32,10 +31,10 @@ $(document).ready(function() {//kald først jQuery-funktioner,når siden er klar
                 
                 <p>Average infection pressure ${averageInfection.toFixed(2)}</p>
                 <hr>
+               
                 `
                 $("#communes").append(html)
             })
-            $("#status").html("Svar fra server OK");
         },
     });
 });
